@@ -44,6 +44,8 @@ def start():
                 print(f"{bad} {fondo1}{Fore.WHITE}409 Conflict {request.url} {nofondo}")
             if request.status_code == 500:
                 print(f"{bad} {fondo1}{Fore.WHITE}500 Internal Server Error {request.url} {nofondo}")
+            else:
+                print(f"{bad} {fondo1}{Fore.WHITE}Al parecer el parametro no existe u ocurrió otro error {nofondo}")
             x = x + 1
     except KeyboardInterrupt:
         print(f"{good} {fondo}Proceso interrumpido {nofondo}")
